@@ -1,100 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-<body>
-  <header>
-    <h1>DragonBall Z Fan Page</h1>
-    <img src="https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/36bdc5ea4443cd8e42f22ec7d3884cbb.jpe" width="700px" height="400px" alt="DragonBall Z Logo" />
-    <p>Welcome to a DragonBall Z Fan Page</p>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="index_2.html">Characters</a></li>
-      <li><a href="index_3.html">Saga</a></li>
-    </ul>
-  </header>
-  <main>
-    <p>Here you will find information on some of the DragonBall Z's Main Characters and there Saga list. DragonBall Z is
-      one of the most watched and highly regarded anime shows. If you would like to subscirbe please enter your
-      information below:
-    </p>
+  <body>
+    <header>
+      <div class="head">
+        <h1>DragonBall Z Fan Page</h1>
+        <img src="https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/36bdc5ea4443cd8e42f22ec7d3884cbb.jpe" alt="DragonBall Z Logo"/>
+        <div class="head-flex">
+        <p>Welcome to a DragonBall Z Fan Page</p>
+        <nav class="hover">
+          <ul class="nav-flex">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index_2.html">Characters</a></li>
+            <li><a href="index_3.html">Saga</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="main-flex main">
+        <p>Here you will find information on some of the DragonBall Z's Main Characters and there Saga list. DragonBall Z is
+                one of the most watched and highly regarded anime shows. If you would like to subscirbe please enter your
+                information below:
+        </p>
 
-    <form>
-      <label for="name">Full Name</label>
-      <input type="text" id="name" placeholder="Required"><br>
-      <label for="email">Email Address</label>
-      <input type="email" id="email" placeholder="Required" required><br>
-      <label for="phone">Phone Number</label>
-      <input type="tel" id="phone" name="user_phone" placeholder="(555) 555-5555"><br>
-      <label for="address">Street Address</label>
-      <input type="text" id="address" name="user_address" placeholder="Required" required><br>
-      <label for="city">City</label>
-      <input type="text" id="city" name="user_city" placeholder="Required" required><br>
-      <label for="state">State</label>
-      <select name="user_state" id="state" required>
-        <option value="" disabled selected hidden>Choose State</option>
-        <option value="alabama">AL - Alabama</option>
-        <option value="alaska">AK - Alaska</option>
-        <option value="arizona">AZ - Arizona</option>
-        <option value="arkansas">AR - Arkansas</option>
-        <option value="california">CA - California</option>
-        <option value="colorado">CO - Colorado</option>
-        <option value="connecticut">CT - Connecticut</option>
-        <option value="delaware">DE - Delaware</option>
-        <option value="florida">FL - Florida</option>
-        <option value="georgia">GA - Georgia</option>
-        <option value="hawaii">HI - Hawaii</option>
-        <option value="idaho">ID - Idaho</option>
-        <option value="illinois">IL - Illinois</option>
-        <option value="indiana">IN - Indiana</option>
-        <option value="iowa">IA - Iowa</option>
-        <option value="kansas">KS - Kansas</option>
-        <option value="kentucky">KY - Kentucky</option>
-        <option value="louisiana">LA - Louisiana</option>
-        <option value="maine">ME - Maine</option>
-        <option value="maryland">MD - Maryland</option>
-        <option value="massachusetts">MA - Massachusetts</option>
-        <option value="michigan">MI - Michigan</option>
-        <option value="minnesota">MN - Minnesota</option>
-        <option value="mississippi">MS - Mississippi</option>
-        <option value="missouri">MO - Missouri</option>
-        <option value="montana">MT - Montana</option>
-        <option value="nebraska">NE - Nebraska</option>
-        <option value="nevada">NV - Nevada</option>
-        <option value="new_hampshire">NH - New Hampshire</option>
-        <option value="new_jersey">NJ - New Jersey</option>
-        <option value="new_mexico">NM - New Mexico</option>
-        <option value="new_york">NY - New York</option>
-        <option value="north_carolina">NC - North Carolina</option>
-        <option value="north_dakota">ND - North Dakota</option>
-        <option value="ohio">OH - Ohio</option>
-        <option value="oklahoma">OK - Oklahoma</option>
-        <option value="oregon">OR - Oregon</option>
-        <option value="pennsylania">PA - Pennsylania</option>
-        <option value="rhode_island">RI - Rhode Island</option>
-        <option value="south_carolina">SC - South Carolina</option>
-        <option value="south_dakota">SD - South Dakota</option>
-        <option value="tennessee">TN - Tennessee</option>
-        <option value="texas">TX - Texas</option>
-        <option value="utah">UT - Utah</option>
-        <option value="vermont">VT - Vermont</option>
-        <option value="virginia">VA - Virginia</option>
-        <option value="washington">WA - Washington</option>
-        <option value="west_virginia">WV - West Virginia</option>
-        <option value="wisonsin">WI - Wisonsin</option>
-        <option value="wyoming">WY - Wyoming</option>
-      </select><br>
-      <label for="zip">Zip Code</label>
-      <input type="text" id="zip" maxlength='5' placeholder="Required" required><br>
-      <button type="submit">Sign Up</button><br>
-    </form>
-  </main>
-</body>
+        <form>
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Required"><br>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="Required" required><br>
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="user_phone" placeholder="(555) 555-5555"><br>
+          <label for="address">Street Address</label>
+          <input type="text" id="address" name="user_address" placeholder="Required" required><br>
+          <label for="city">City</label>
+          <input type="text" id="city" name="user_city" placeholder="Required" required><br>
+          <label for="state">State</label>
+          <select name="user_state" id="state" required>
+            <option value="" disabled selected hidden>Choose State</option>
+            <option value="alabama">AL - Alabama</option>
+            <option value="alaska">AK - Alaska</option>
+            <option value="arizona">AZ - Arizona</option>
+            <option value="arkansas">AR - Arkansas</option>
+            <option value="california">CA - California</option>
+            <option value="colorado">CO - Colorado</option>
+            <option value="connecticut">CT - Connecticut</option>
+            <option value="delaware">DE - Delaware</option>
+            <option value="florida">FL - Florida</option>
+            <option value="georgia">GA - Georgia</option>
+            <option value="hawaii">HI - Hawaii</option>
+            <option value="idaho">ID - Idaho</option>
+            <option value="illinois">IL - Illinois</option>
+            <option value="indiana">IN - Indiana</option>
+            <option value="iowa">IA - Iowa</option>
+            <option value="kansas">KS - Kansas</option>
+            <option value="kentucky">KY - Kentucky</option>
+            <option value="louisiana">LA - Louisiana</option>
+            <option value="maine">ME - Maine</option>
+            <option value="maryland">MD - Maryland</option>
+            <option value="massachusetts">MA - Massachusetts</option>
+            <option value="michigan">MI - Michigan</option>
+            <option value="minnesota">MN - Minnesota</option>
+            <option value="mississippi">MS - Mississippi</option>
+            <option value="missouri">MO - Missouri</option>
+            <option value="montana">MT - Montana</option>
+            <option value="nebraska">NE - Nebraska</option>
+            <option value="nevada">NV - Nevada</option>
+            <option value="new_hampshire">NH - New Hampshire</option>
+            <option value="new_jersey">NJ - New Jersey</option>
+            <option value="new_mexico">NM - New Mexico</option>
+            <option value="new_york">NY - New York</option>
+            <option value="north_carolina">NC - North Carolina</option>
+            <option value="north_dakota">ND - North Dakota</option>
+            <option value="ohio">OH - Ohio</option>
+            <option value="oklahoma">OK - Oklahoma</option>
+            <option value="oregon">OR - Oregon</option>
+            <option value="pennsylania">PA - Pennsylania</option>
+            <option value="rhode_island">RI - Rhode Island</option>
+            <option value="south_carolina">SC - South Carolina</option>
+            <option value="south_dakota">SD - South Dakota</option>
+            <option value="tennessee">TN - Tennessee</option>
+            <option value="texas">TX - Texas</option>
+            <option value="utah">UT - Utah</option>
+            <option value="vermont">VT - Vermont</option>
+            <option value="virginia">VA - Virginia</option>
+            <option value="washington">WA - Washington</option>
+            <option value="west_virginia">WV - West Virginia</option>
+            <option value="wisonsin">WI - Wisonsin</option>
+            <option value="wyoming">WY - Wyoming</option>
+          </select><br>
+          <label for="zip">Zip Code</label>
+          <input type="text" id="zip" maxlength='5' placeholder="Required" required><br>
+          <button type="submit">SIGN UP</button><br>
+        </form>
+        <div></main>
+      </body>
 
+    </html>
+  </body>
 </html>
