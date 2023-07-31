@@ -47,6 +47,11 @@ nav {
   width: 100%;
 }
 
+/* Index.html stylings */
+.main p:nth-child(2) {
+  font-style: italic;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -91,6 +96,67 @@ button:hover {
 .head-flex {
   flex-direction: column-reverse;
 }
+/* Index_2.html stylings */
+
+.characters {
+  width: 90%;
+}
+
+.character img {
+  width: 100%;
+  height: 600px;
+}
+/* Index_3.html stylings */
+
+.table-wide {
+  display: none;
+}
+
+.table-long,
+.table-wide {
+  margin-bottom: 5rem;
+}
+
+.table-long,
+.table-wide {
+  border: 1px solid black;
+}
+
+.table-long table,
+.table-wide table {
+  border-collapse: collapse;
+}
+
+.table-long thead,
+.table-long tbody tr,
+.table-wide thead,
+.table-wide tbody tr {
+  border-bottom: 1px solid black;
+}
+
+.table-long th,
+.table-long td,
+.table-wide th,
+.table-wide td {
+  border-right: 1px solid black;
+}
+
+.table-long th:nth-child(3),
+.table-long td:nth-child(3),
+.table-wide th:nth-child(6),
+.table-wide td:nth-child(6) {
+  border-right: none;
+}
+
+.table-long tr:nth-child(5),
+.table-wide tr:nth-child(2) {
+  border-bottom: none;
+}
+
+th,
+td {
+  padding: 1rem;
+}
 
 @media(min-width: 768px) {
 
@@ -98,24 +164,44 @@ button:hover {
     position: relative;
   }
 
-  .hover {
-    opacity: 0;
-    position: absolute;
-    top: 40%;
-    transition: 0.5s ease;
-  }
-
   nav ul {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
-  .head img {
-    opacity: 1;
+  form {
+    width: 60%;
+  }
+
+  form label{
+    text-align: left;
+  }
+
+  form input,
+  form select {
+    padding: 1rem;
+  }
+
+  form button {
+    width: 20%;
+    margin-left: auto;
+  }
+
+  .characters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 800px;
+  }
+
+  .character {
+    flex: 2 300px;
+  }
+
+  .table-long {
+    display: none;
+  }
+
+  .table-wide {
     display: block;
-    transition: 0.5s ease;
-  }
-
-  .head img:hover {
-    opacity: .5;
   }
 }
