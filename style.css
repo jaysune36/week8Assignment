@@ -19,14 +19,11 @@ ul a {
 
 nav li:nth-child(1) {
   border-right: 1px solid black;
+  padding-right: 10%;
 }
 
 nav li:nth-child(3) {
   border-left: 1px solid black;
-}
-
-nav li:nth-child(3),
-nav li:nth-child(1) {
   padding-left: 10%;
 }
 
