@@ -19,11 +19,14 @@ ul a {
 
 nav li:nth-child(1) {
   border-right: 1px solid black;
-  padding-right: 10%;
 }
 
 nav li:nth-child(3) {
   border-left: 1px solid black;
+}
+
+nav li:nth-child(3),
+nav li:nth-child(1) {
   padding-left: 10%;
 }
 
@@ -53,8 +56,6 @@ nav {
 }
 
 form {
-  display: flex;
-  flex-direction: column;
   font-size: 1.25rem;
 }
 
@@ -76,25 +77,6 @@ button:hover {
   background-color: #CC0000;
   opacity: .5;
   cursor: pointer;
-}
-
-.main-flex,
-.head-flex {
-  margin: 0 auto;
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.nav-flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.head-flex {
-  flex-direction: column-reverse;
 }
 /* Index_2.html stylings */
 
@@ -158,6 +140,38 @@ td {
   padding: 1rem;
 }
 
+/* FLEX STYLINGS */
+
+.main-flex,
+.head-flex,
+.nav-flex,
+.head-flex,
+form {
+  display: flex;
+}
+
+.main-flex,
+.head-flex {
+  margin: 0 auto;
+  width: 90%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-flex {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.head-flex {
+  flex-direction: column-reverse;
+}
+
+form {
+  flex-direction: column;
+}
+
+/* MEDIA QUERIES */
 @media(min-width: 768px) {
 
   .head {
